@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostController;//追加
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,4 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/posts',[PostController::class,'index']);
-/*
-/postsというuriにgetメソッドで注文が来たらpostcontrollerのindexを実行
-*/
+Route::get('/', [PostController::class, 'index']);
